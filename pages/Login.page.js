@@ -17,9 +17,9 @@ class LoginPage {
     return errorMessage.getText();
   }
 
-  login(username, password) {
+  login({ username, password }) {
     this.inputUsername.setValue(username);
-    this.inputPassword.setValue(`${password}\n`);
+    this.inputPassword.setValue(`${password}\n`); // same as password + "\n"
   }
 }
 
